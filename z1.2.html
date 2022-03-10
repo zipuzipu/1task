@@ -1,0 +1,23 @@
+
+<meta charset="utf-8">
+
+<body>
+	<div id="two">
+		<ul >
+		  <li>Фамилия</li>
+		  <li>Имя</li>
+		</ul>
+	</div>
+	<div id="one">
+		<ul>
+			<li>Привет! Я Студент</li>
+		</ul>
+	</div>
+</body>
+<script>
+	function prepend(what,where){
+		where.prepend(what);
+	}
+
+	prepend(document.querySelector('#one'), document.querySelector('#two'));
+</script>

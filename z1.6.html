@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<body>
+    <button href="\unknownpage.html">Кнопка</button>
+</body>
+<script>
+    function skipDefault(eventName, target) {
+        target.addEventListener(eventName, function (eventName) =>
+                eventName.preventDefault();
+        }
+
+        skipDefault('click', document.querySelector('button'));
+</script>

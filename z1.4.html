@@ -1,0 +1,10 @@
+<meta charset="utf-8">
+<body><button id="btn">button</button> 
+<script >
+    function addListener(event, target, fn) {
+       target.addEventListener(event, fn);
+    }
+    addListener("click", document.getElementById('btn'), () =>
+            console.log('...'))
+   
+</script>

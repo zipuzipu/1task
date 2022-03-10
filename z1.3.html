@@ -1,0 +1,24 @@
+
+<meta charset="utf-8">
+<body>
+	<div></div>
+	<p></p>
+	<a></a>
+	<span></span>
+	<p></p>
+</body>
+<script>
+	function findAllPSiblings(where) {
+		let children = where.children;
+    	let arr = [];
+    	for (let i = 0; i < children.length-1; i++) {
+        	if (children[i].nextElementSibling.nodeName === 'P') {
+        		arr.push(children[i]);
+        	}
+    	}
+    	return arr;
+	}	
+
+	console.log(findAllPSiblings(document.body)) ;
+</script>
+
